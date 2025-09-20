@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Grades & Feedback</title>
+    <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+
+    <h1 id="page-title">Student Grades</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Student Info</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="highlight-row">
+                <td rowspan="2">Kaisar</td>
+                <td>Psychology</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Extra credit</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Nurkeldi</td>
+                <td>Sociology</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Ruslan</td>
+                <td>Physics</td>
+                <td>A</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 id="form-title">Feedback Form</h2>
+
+    <form id="feedback-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="role">Role:</label>
+        <select id="role" name="role">
+            <option>Student</option>
+            <option>Teacher</option>
+            <option>Other</option>
+        </select>
+
+        <p>Did you like this page?</p>
+        <div class="radio-group">
+            <label><input type="radio" name="like" value="yes"> Yes</label>
+            <label><input type="radio" name="like" value="no"> No</label>
+        </div>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
